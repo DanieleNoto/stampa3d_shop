@@ -1,5 +1,22 @@
-<%= render partial: "home/navbar" %>
-<%= render partial: "home/hero" %>
-<%= render partial: "home/shop" %>
-<%= render partial: "home/services" %>
-<%= render partial: "home/footer" %>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+
+.text-shadow {
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.shadow {
+  shadow: 2px 1px 10px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+</style>
+
+<%= render partial: "home/navbar", locals: {style: "height: 15em"} %>
+<%= render partial: "home/hero", locals: {style: "height: 60em;  background-image: url('/image.png'); background-size: cover; background-position: center; position: relative; opacity:0.5"} %>
+<%= render partial: "home/shop", locals: {style: "height:60em"} %>
+<%= render partial: "home/services", locals: {style: "height: 60em;"} %>
+<%= render partial: "home/footer", locals: {style: "height: 20em;"} %>
